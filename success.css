@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Font1', sans-serif;
+    background-color: hsl(250, 36%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white; 
+    border-radius: 20px;
+    padding: 3rem;
+    width: 30%;
+    height: 60vh;
+    margin: auto;
+}
+
+.container img {
+    width: 15%;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.container h1 {
+    font-size: 40px;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 12px;
+    line-height: 1rem;
+    margin-bottom: 20px;
+}
+
+.container button {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    border-style: none;
+}
+
+.container button:hover {
+    background: linear-gradient(to right, hsl(330, 91%, 68%), #FF5733);
+  }
+
+  @media (max-width: 390px) {   /* iphone 12 pro */
+    .container {
+      flex-direction: column;
+      justify-content: stretch;
+      height: 100vh;
+      width: 100vh;
+      border-radius: 0;
+      padding: 30px;
+    }
+  
+    .container img {
+        margin: 50px 0;
+        width: 20%;
+    }
+  
+    .container p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 360px;
+    }
+  
+    .container button {
+        margin-bottom: 0;
+    }
+  }

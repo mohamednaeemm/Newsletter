@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Font1:style1|Font2:style2&family=Font3:style3&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="container-text">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="image-list">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form id="emailForm">
+            <label for="emailSubmit">Email address<p class="error-message" id="emailError">Valid email required</p></label>
+            
+              <input placeholder="email@company.com" type="email" id="emailSubmit" name="email" required />
+            <button type="submit" id="submitBtn">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <div class="container-image">
+          <img src="assets/images/illustration-sign-up-desktop.svg" alt="photo">
+        </div>
+      
+    </div>
+    <script src="./script.js"></script>
+    
+  </body>
+</html>
